@@ -1,227 +1,153 @@
-const prompt = require("prompt-sync")();
-
-// String
-
-// let a = "Hello World";
-// let b  = `Hello world`;
-// const age = 25;
-
-// console.log(typeof(a),"name = ",a);
-// console.log(typeof(b),"name = ",b);
-// console.log(typeof(age),"Age = ",age);
-
-// let a = 12;
-// console.log(typeof(a));
-
-// let sum;
-
-// console.log(typeof sum)
-
-// let a = true;
-// let b = false;
-
-// console.log(typeof a);
-// console.log(typeof b)
-
-// let a = null;
-// console.log(a,typeof a);
-
-// let a = Symbol("id");
-// let b = Symbol("id");
-
-// console.log(a == !b);
-
-// const num = [1,2,3,4,5];
-// console.log(num,typeof num)
-
-// const name = ["john","bob","lion"];
-// console.log(name);
-// console.log(name[2])
-// console.log(name[1])
-
-// const name = {
-//     name:'Ketan',
-//     course:"BCA",
-//     Branch:"Full Stack",
-//     Age:25,
-//     data:{
-//         name:'BOB',
-//         Course:'BBA'
-//     }
+// for(let i=0; i<=5; i++){
+//     console.log("i = ",i,"Hello World");
 // }
 
-// console.log(name[name]);
-// console.log(name.Age)
-// console.log(name.data.name)
+// let i = 1;
+// while(i <= 5){
+//     console.log(i,'i = ',"Hello World");
+//     i++;
+// }
+
+// let i = 1;
+// while(i <= 5){
+//     console.log(`Hello World ${i}`);
+//     i++;
+// }
+
+// let i = 1;
+// while(i <= 5){
+//     console.log(i);
+//     if(i === 3){
+//         break;
+//     }
+//     i++;
+// }
+
+// let i = 1;
+// while(i <= 5){
+//     console.log(i);
+//     if(i === 2){
+//         continue;
+//     }
+//     i++;
+// }
+
+// let i = 1;
+// while(i <= 5){
+//     i++;
+//     if(i === 3){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// let i = 1;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i <= 1);
+
+// let i = 1;
+// do{
+//     console.log('i = ',i,'Hello World');
+//     i++;
+// }while(i <= 10);
+
+// const cars = ['A','B','C','D','E'];
+
+// for(let i of cars){
+//     console.log(i);
+// }
+
+// let Str = "Hello World";
+// let size = 0;
+
+// for(let i of Str){
+//     console.log('i = ',i);
+//     size++;
+// }
+
+// console.log("String of length = ",size);
+
+// let hero = ['A','B','C','D','E'];
+
+// for(let i = 0; i< hero.length; i++){
+//     console.log(hero[i]);
+// }
+
+// const std = {
+//     name:'Ketan goyal',
+//     course:'BCA',
+//     branch:'Full Stack',
+//     Age:20
+// }
+
+// for(let i in std){
+//     console.log(' i =',i,'value = ',std[i])
+// }
+
+// const std = {
+//     name:'Mann Soni',
+//     branch:'Full Stack',
+//     course:'BCA'
+// }
+
+// for(let i in std){
+//     console.log('i = ',i,'data = ',std[i]);
+// }
+
+// let arr = ['1a','2b','3c','4d','5e'];
+
+// for(let i in arr){
+//     console.log(arr[i]);
+// }
 
 // function Output(){
 //     console.log("Hello World");
-//     console.log("hello Data");
 // }
 
 // Output();
 
-// function cal(a,b){
-//     console.log("a + b = ",a + b);
-//     console.log("a - b = ",a - b);
+// const multi = function (){
+//     console.log("Hello World");
+// }
+
+// multi();
+
+// const add = function(a,b){
+//     console.log('a + b = ',a + b);
+// }
+
+// add(10,2);
+
+// const Output = () => {
+//     console.log('Hello World');
+// }
+
+// Output();
+
+// function sum(a,b){
+//     console.log('a + b = ',a + b);
+//     console.log('a - b = ',a - b);
 //     console.log('a / b = ',a / b);
-//     console.log("a * b = ",a * b);
+//     console.log('a * b = ',a * b);
+//     console.log('a ** b = ',a ** b);
 // }
 
-// cal(10,2);
+// sum(10,2);
 
-// let a = "10";
-// let b = "2";
-
-// console.log(a + b);
-// console.log(a -b);
-// console.log(a * b);
-// console.log(a / b);
-// console.log(a ** b);
-// console.log(a % b);
-// console.log(a++);
-// console.log(++a);
-// console.log(a--);
-// console.log(--a);
-
-// let a  = "12";
-// let b = 2;
-// console.log(a * b)
-
-// let a = 11;
-// let b = 2;
-// console.log(a % b);
-
-// let a = "MANN";
-// let b = 12;
-// console.log(a % b);
-
-// let a = 10;
-// let b = 2;
-
-// console.log(a += b);
-// console.log(a -= b)
-// console.log(a *= b)
-// console.log(a **= b);
-// console.log(a %= b )
-
-// let a = 12;
-// let b = 10;
-// console.log(a == b);
-// console.log(a === b)
-// console.log(a != b);
-// console.log(a !== b);
-
-// console.log(a > b)
-// console.log(a < b);
-// console.log(a >= b);
-// console.log(a <= b)
-
-// let age = 99;
-
-// if(age > 18){
-//     console.log("Adult")
-// }else{
-//     console.log("not adult");
+// function add(a,b){
+//     return a + b;
+//     console.log('a * b = ',a * b);
 // }
 
-// if(age > 18){
-//     console.log("Adult");
-// }else if(age < 60){
-//     console.log("old");
-// }else{
-//     console.log("Not Adult");
+// console.log(add(102,34));
+
+// function text(){
+//     let x = "Hello Sir";
+
+//     return x;
 // }
 
-// let num = prompt("Enter the value");
+// console.log(text());
 
-// if (num % 2 === 0) {
-//   console.log("2 is divded");
-// } else if (num % 3 === 0) {
-//   console.log("3 is divded");
-// } else {
-//   console.log("2 and 3 is not divided");
-// }
-
-
-// let num = prompt("Enter the value");
-
-// console.log(num,"num = ",typeof num);
-
-// let a  = prompt("Enter the value =");
-// let b = prompt("Enter the value = ");
-
-// console.log(a + b);
-
-// const num1 = prompt("Enter the value1 = ");
-// const num2 = prompt("Enter the value2 = ");
-// const operator = prompt("Enter your Operator(-, + , * ,/)");
-
-// let result = "";
-
-// if(operator == "+"){
-//     result = num1 + num2;
-// }else if(operator == "-"){
-//     result = num1 - num2;
-// }else if(operator == "*"){
-//     result = num1 * num2;
-// }else if(operator == "/"){
-//     result = num1 / num2;
-// }
-
-// console.log(num1 + operator + num2 ," = ",result);
-
-// let a = 2;
-
-// let b = a == 1 ? "blue":(a != 1, console.log("not equal"));
-// console.log(b);
-
-// Swtich Statement
-
-// let num = prompt("Enter the number");
-
-// switch(num){
-//     case "num":console.log(1);
-//     break;
-//     case "num":console.log(2);
-//     break;
-//     case "num":console.log(3);
-//     break;
-//     default:console.log("Invalid value");
-//     break;
-// }
-
-// console.log(num);
-
-// let a = 5;
-
-// for(let i=1; i<=a; i++){
-//     console.log(i,"Apan college")
-// }
-
-// let a = 5;
-
-// for(let i=a; i>=1; i--){
-//     console.log(" i = ",i);
-// }
-
-// let a = 100;
-
-// for(let i = 1; i<=a; i++){
-//     if(i % 2 !== 0){
-//         console.log(' i = ',i);
-//     }
-// }
-
-let a = 10;
-
-for(let i=1; i<=a; i++){
-    if(i === 7){
-        break;
-    }
-    if(i === 6){
-        continue;
-    }
-
-    console.log(i)
-}
