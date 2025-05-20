@@ -151,3 +151,78 @@
 
 // console.log(text());
 
+// let str = "Hello World";
+
+// console.log(typeof str)
+// console.log(str.length)
+
+// let str = "Hello World";
+// console.log(str.slice(0,5))
+// console.log(str.slice(2,5))
+
+// let str = " Hello World ";
+// console.log(str.slice(1,4))
+// console.log(str.trim())
+
+// let str = "      Hello World     ";
+// console.log(str + "Lenght:- " + str.length);
+
+// console.log(str.trimStart() + "Lenght:- " + str.trimStart().length)
+// console.log(str.trimEnd() + "lenght = ",str.trimStart().length)
+
+// let str = "King King King King King King King";
+// console.log(str.replace("King",'queen'));
+// console.log(str.replaceAll('King','queen'))
+
+// let str = "Hello";
+// let str2 = "World";
+// console.log(str.concat(str2))
+
+// let str = "HELLO";
+// let str2 = "world";
+
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase())
+
+// let str = "Apan college";
+// console.log(str.charAt(3))
+
+// let str = "hello World";
+// console.log(str.includes("World"));
+// console.log(str.includes("Hi"))
+
+// let arr_value = ['A','B','C','D'];
+// console.log(arr_value[3])
+// console.log(arr_value.length)
+
+// let str = ['A','B','C','D'];
+// console.log(str.push('E'));
+// console.log(str.pop())
+
+// let str = ['A','B','C','D','E'];
+// str.push("E");
+// str.pop();
+// console.log(str)
+
+// let arr = [1,2,3,4];
+// // console.log(arr.unshift(5));
+// console.log(arr.shift())
+// console.log(arr)
+
+// let arr1 = ['A','B'];
+// let arr2 = ['C','D'];
+// console.log(arr1.concat(arr2))
+
+// let arr = [1,2,3,4,5];
+// console.log(arr.slice(3))
+
+// let str = [1,2,3,4,5,'Hello','Wordl','Apex','College'];
+// console.log(str.splice(1,1))
+// console.log(str.splice(1,4,5))
+// console.log(str.splice(1,2,3,'Hello'))
+// console.log(str)
+
+// let str = [1,2,3,'A','B','C'];
+// console.log(str.splice(2,1,'D','E'))
+// console.log(str)
+
